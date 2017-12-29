@@ -7,6 +7,9 @@ class Anagram
   end
 
   def self.match(words)
-    words.map { |e| word.split.sort == e.split.sort }
+    words.map do |e|
+      e.split.sort == word.split.sort
+
+    end
   end
 end
