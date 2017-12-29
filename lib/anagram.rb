@@ -6,7 +6,7 @@ class Anagram
     @word = word
   end
 
-  def self.match(pos_match)
-    pos_match.map { |e| word.split.sort == e.split.sort }
+  def self.match(words)
+    words.map { |e| word.split.sort == e.split.sort }
   end
 end
