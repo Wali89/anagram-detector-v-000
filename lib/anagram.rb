@@ -10,8 +10,10 @@ class Anagram
     ans = []
     words.map do |e|
       if e.split.sort == word.split.sort
-        ans << e 
+        ans << e
       end
     end
+    ans
   end
+
 end
